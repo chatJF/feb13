@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../assets/css/Footer-with-button-logo.css';
 import tron from '../assets/images/tron.png';
 import hoppa from '../assets/images/hoppa_logo_main.png';
+import {Link} from 'react-router-dom';
 
 class Footer extends Component{
     render(){
@@ -25,39 +26,34 @@ class Footer extends Component{
                 <div className="col-sm-2">
                     <h5>Get started</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/sign-up">Sign up</Link></li>
+                        <li><Link to="/downloads">Downloads</Link></li>
                     </ul>
                 </div>
                 <div className="col-sm-2">
                     <h5>About us</h5>
                     <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
+                        <li><Link to="/company-info">Company Information</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="/reviews">Reviews</Link></li>
                     </ul>
                 </div>
                 <div className="col-sm-2">
                     <h5>Support</h5>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
+                        <li><Link to="/faq">FAQ</Link></li>
+                        <li><Link to="/help">Help desk</Link></li>
+                        <li><Link to="/forum">Home</Link></li>
                     </ul>
                 </div>
                 <div className="col-sm-3">
-                    <div className="social-networks">
-                        <a href="#" className="twitter"><i className="fa fa-twitter"></i></a>
-                        <a href="#" className="facebook"><i className="fa fa-facebook"></i></a>
-                        <a href="#" className="google"><i className="fa fa-google-plus"></i></a>
-                    </div>
                     <button type="button" className="btn btn-default">Contact us</button>
                 </div>
             </div>
         </div>
         <div className="footer-copyright">
-            <p>© 2016 Copyright Text </p>
+            <p>© 2016 Copyright Text</p>
         </div>
     </footer>
         )
